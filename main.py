@@ -16,6 +16,7 @@ def tick():
 
 # 周一到周五早上5：30 执行
 if __name__ == '__main__':
+    login()
     scheduler = BlockingScheduler()
     #scheduler.add_job(tick, 'cron', second='*/10', hour='*')
     scheduler.add_job(tick,
